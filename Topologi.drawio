@@ -1,0 +1,57 @@
+<mxfile host="app.diagrams.net" modified="2023-08-08T14:26:08.312Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="M7qyahxden_hyf235QFF" version="21.6.6" type="google">
+  <diagram name="Page-1" id="655C8YqllHlCtVucH9ov">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-1" value="PFsense" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="360" y="240" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-2" value="Windows Server" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="410" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-3" value="Windows 10" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="410" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-4" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="5nKb9kS0SFnYoCbLCtVp-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="301" y="403" as="sourcePoint" />
+            <mxPoint x="490" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="300" y="340" />
+              <mxPoint x="420" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-5" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0;entryDx=50;entryDy=0;entryPerimeter=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5nKb9kS0SFnYoCbLCtVp-1" target="5nKb9kS0SFnYoCbLCtVp-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="390" as="sourcePoint" />
+            <mxPoint x="490" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="340" />
+              <mxPoint x="600" y="340" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-6" value="windows 10&lt;br&gt;Dynamic IP: 10.0.0.3&lt;br&gt;default gateway: 10.0.0.1" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="360" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-7" value="Windows server:&lt;br&gt;Static IP: 10.0.0.2/24&lt;br&gt;subnet: 255.255.255.0 &lt;br&gt;DHCP Server:&lt;br&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="610" y="350" width="180" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-12" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.45;exitY=-0.043;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="5nKb9kS0SFnYoCbLCtVp-1" target="5nKb9kS0SFnYoCbLCtVp-11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="414" y="237" as="sourcePoint" />
+            <mxPoint x="414" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-11" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="350" y="100" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5nKb9kS0SFnYoCbLCtVp-8" value="pfsense:&lt;br&gt;Default gateway: 10.0.0.1 &lt;br&gt;IP: 10.0.0.1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="345" y="350" width="150" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
