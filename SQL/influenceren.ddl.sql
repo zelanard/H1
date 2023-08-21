@@ -14,7 +14,7 @@ USE Influenceren;
 CREATE TABLE Influencers( 
 	t_influencer_id int PRIMARY KEY,
 	t_name varchar(50) NOT NULL,
-	t_age float,
+	t_age int,
 	t_instagram_followers int
 );
 

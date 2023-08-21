@@ -87,7 +87,7 @@ LEFT JOIN Brands
 WHERE Influencers.t_instagram_followers > 40000;
 
 --14
-SELECT SocialMediaPlatforms.t_name, AVG(Influencers.t_age) AS "Average"
+SELECT SocialMediaPlatforms.t_name, AVG(Influencers.t_age) AS "Average Age"
 FROM Collaborations
 LEFT JOIN Influencers
 	ON Influencers.t_influencer_id = Collaborations.t_influencer_id
