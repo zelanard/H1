@@ -1,0 +1,29 @@
+USE MASTER DROP DATABASE CompanyDB;
+
+CREATE DATABASE CompanyDB;
+
+GO
+    USE CompanyDB;
+
+CREATE LOGIN Manager WITH PASSWORD = 'Manager!0ret';
+
+CREATE LOGIN Employee WITH PASSWORD = 'Employee!0ret';
+
+CREATE LOGIN Guest WITH PASSWORD = 'Guest!0ret';
+
+CREATE USER James FOR LOGIN Manager;
+
+CREATE USER Jones FOR LOGIN Employee;
+
+CREATE USER Jimmy FOR LOGIN Guest;
+
+GRANT 
+    CONTROL 
+    ON DATABASE :: CompanyDB TO James;
+
+GRANT
+    SELECT, INSERT, UPDATE, DELETE ON DATABASE :: CompanyDB TO Jones;
+
+GRANT
+SELECT
+    ON DATABASE :: CompanyDB TO Jimmy;

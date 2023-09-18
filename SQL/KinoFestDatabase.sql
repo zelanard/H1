@@ -17,8 +17,8 @@ CREATE TABLE Directors(
 );
 
 --Genre
-CREATE TABLE Gengre(
-    gen_id int PRIMARY KEY,
+CREATE TABLE Genre(
+    gen_id int IDENTITY(1,1) PRIMARY KEY, --Start at 1 and increment by 1.
     gen_name varchar(60)
 );
 
@@ -27,7 +27,7 @@ CREATE TABLE Movies(
     mov_id int PRIMARY KEY,
     mov_title varchar(100) NOT NULL, --We must have the title of the movie to know which movie it is.
     mov_duration_min int,
-    mov_genre_id int FOREIGN KEY REFERENCES Gengre(gen_id), --nothing in the movies should change when a genre changes. A movie can exist in the database without a genre.
+    mov_genre_id int FOREIGN KEY REFERENCES Genre(gen_id), --nothing in the movies should change when a genre changes. A movie can exist in the database without a genre.
     mov_publication_year int
 );
 
@@ -122,7 +122,7 @@ VALUES
 
 --Genre
 INSERT INTO
-    Gengre(gen_id, gen_name)
+    Genre(gen_id, gen_name)
 VALUES
     (1, 'Horror'),
     (2, 'Fantasy'),
